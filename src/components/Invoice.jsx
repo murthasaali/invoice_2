@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import InvoiceNavbar from "./InvoiceNavbar";
 import { FaSearch } from "react-icons/fa";
 import InvoiceTable from "./InvoiceTable";
-// import { PiFilePlusDuotone } from "react-icons/pi";
+import invoiceData from "../Constants/Datas/InvoiceDatas";
 import CreateInvoiceModal from "../Modals/CreateInvoice";
 
 function Invoice() {
+  const [filteredInvoices, setFilteredInvoices] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
+  useEffect(() => {
+
+    const filteredInvoice = invoiceData.filter((invoice) =>
+      invoice.customerName.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+    setFilteredInvoices(filteredInvoice);
+  }, [searchQuery]);
+  
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -24,6 +34,8 @@ function Invoice() {
           <div className="text-xl font-thin text-white">Invoices </div>
           <div className="w-[300px] h-12 rounded-full border flex justify-between text-xl border-stone-200 border-opacity-40 items-center px-3">
             <input
+                          onChange={(e) => setSearchQuery(e.target.value)}
+
               type="text"
               className="w-full rounded-full bg-transparent outline-none px-3 text-white font-normal"
             />
@@ -58,7 +70,7 @@ function Invoice() {
         </div>
         <div className="w-full h-[90%] p-5 gap-4 flex overflow-hidden">
           <div className="w-[60%] h-full overflow-auto ">
-            <InvoiceTable />
+            <InvoiceTable filteredInvoice={searchQuery.length>0&&filteredInvoices} />
           </div>
 
           <div className="w-[40%] h-[60%] bg-stone-950"></div>

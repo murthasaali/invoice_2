@@ -57,16 +57,17 @@ function CreateInvoiceModal({ isOpen, onClose }) {
     console.log(existingInvoices)
   
     const updatedInvoices = [...existingInvoices, newInvoice];
+    console.log(updatedInvoices)
   
     localStorage.setItem("invoiceData", JSON.stringify(updatedInvoices));
     console.log(updatedInvoices)
     onClose()
-    setFormData({ invoiceNumber: "",
-    customerName: "",
-    date: "",
-    total: "",
-    tax: "",
-    grandTotal: ""})
+    // setFormData({ invoiceNumber: "",
+    // customerName: "",
+    // date: "",
+    // total: "",
+    // tax: "",
+    // grandTotal: ""})
 
   };
 
