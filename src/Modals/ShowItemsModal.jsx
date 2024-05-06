@@ -27,15 +27,15 @@ function ShowItemsModal({ isOpen, onClose, onItemSelected }) {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="bg-stone-100 w-[50%] h-[60%] bg-opacity-80  rounded-lg relative z-10">
-        <div className="w-full h-full bg-stone-800 bg-opacity-35 p-3 flex flex-col items-center">
-          <h1 className="text-xl font-thin">Items table</h1>
-          <div className="w-[300px] h-10 rounded-full border flex justify-between text-xl border-stone-200 border-opacity-40 items-center px-3">
+      <div className="absolute inset-0 "></div>
+      <div className=" w-[50%] h-[70%]  backdrop-blur-lg  rounded-lg relative z-10">
+        <div className="w-full h-full  backdrop-blur-lg p-3 flex flex-col items-center">
+          <div className="w-[300px] h-10 rounded-full border flex justify-between text-xl items-center px-3 ">
             <input
+            placeholder="search product "
               onChange={(e) => setSearchQuery(e.target.value)}
               type="text"
-              className="w-full rounded-full bg-transparent outline-none px-3 text-white font-normal"
+              className="w-full rounded-full text-xs  bg-transparent outline-none px-3 text-stone-700 text-opacity- font-normal"
             />
             <FaSearch className="text-blue-200 text-opacity-35" />
           </div>

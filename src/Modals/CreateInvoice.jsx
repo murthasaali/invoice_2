@@ -77,9 +77,9 @@ function CreateInvoiceModal({ isOpen, onClose }) {
     <>
       <div className="fixed inset-0 flex items-center justify-center z-50">
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="bg-stone-100 w-[40%] h-[70%] bg-opacity-80  rounded-lg relative z-10">
+        <div className="bg-stone-100 w-[50%] h-[70%] bg-opacity-80  rounded-3xl relative z-10">
           <div className="w-full h-full bg-stone-800 bg-opacity-35 p-3">
-            <h1 className="text-xl font-thin">Create Invoice</h1>
+            <h1 className="text-xl font-thin w-full  text-start">Create Invoice</h1>
             <button
               onClick={onClose}
               className="p-1 rounded-full text-stone-900 text-xl border border-stone-950 absolute top-3 right-3 hover:bg-gray-600"
@@ -93,7 +93,8 @@ function CreateInvoiceModal({ isOpen, onClose }) {
                   <label className="block text-stone-100 text-sm font-thin mb-1">
                     Invoice Number
                   </label>
-                  <input
+                  <input 
+                  required
                     type="text"
                     name="invoiceNumber"
                     value={formData.invoiceNumber}
@@ -105,7 +106,8 @@ function CreateInvoiceModal({ isOpen, onClose }) {
                   <label className="block  text-stone-100 text-sm font-thin mb-1">
                     Date
                   </label>
-                  <input
+                  <input 
+                  required
                     type="date"
                     name="date"
                     value={formData.date}
@@ -118,6 +120,7 @@ function CreateInvoiceModal({ isOpen, onClose }) {
                     Customer name
                   </label>
                   <input
+                  required
                     type="text"
                     name="customerName"
                     value={formData.customerName}
@@ -145,7 +148,7 @@ function CreateInvoiceModal({ isOpen, onClose }) {
                         ))}
               </div>
               <div className="w-full h-fit p-3 flex justify-between ">
-                <div className="w-[30%] h-28 bg-blue-200 bg-opacity-80 relative justify-end items-start p-3 rounded-3xl flex flex-col">
+                <div className="w-[30%] h-28 bg-blue-200 border bg-opacity-80 relative justify-end items-start p-3 rounded-3xl flex flex-col">
                   <h1 className="absolute top-4 left-3 ">Total Price</h1>
                   <div className="text-stone-950 bg-opacity-40 text-2xl"> <CountUp end={totalPrice} /></div>
                 </div>
