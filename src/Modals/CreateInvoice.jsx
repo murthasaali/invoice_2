@@ -152,18 +152,18 @@ function CreateInvoiceModal({ isOpen, onClose }) {
                             </div>
                         ))}
               </div>
-              <div className="w-full h-fit p-3 flex justify-between ">
-                <div className="w-[30%] h-28 bg-blue-200 border bg-opacity-80 relative justify-end items-start p-3 rounded-3xl flex flex-col">
+              <div className="w-full h-fit p-3 text-xs font-sans text-stone-100 flex justify-between ">
+                <div style={{background:"#71A3C6  "}} className="py-10 w-[30%] h-28  relative justify-end items-start p-3 rounded-3xl flex flex-col">
                   <h1 className="absolute top-4 left-3 ">Total Price</h1>
-                  <div className="text-stone-950 bg-opacity-40 text-2xl"> <CountUp end={totalPrice} /></div>
+                  <div className=" bg-opacity-40 text-[30px] font-bold "> <CountUp end={totalPrice} />.00</div>
                 </div>
-                <div className="w-[30%] h-28 bg-blue-200 bg-opacity-80 relative justify-end  items-start p-3 rounded-3xl flex flex-col">
+                <div style={{background:"#71A3C6  "}} className="py-10 w-[30%] h-28  relative justify-end  items-start p-3 rounded-3xl flex flex-col">
                   <h1 className="absolute top-4 left-3 ">Total tax</h1>
-                  <div className="text-stone-950 bg-opacity-40 text-2xl "> <CountUp end={totalTax} /></div>
+                  <div className=" bg-opacity-40 text-[30px] font-bold  "> <CountUp end={totalTax} /><span className="text-sm">%</span></div>
                 </div>
-                <div className="w-[30%] h-28 bg-blue-200 bg-opacity-80 relative justify-end  items-start p-3 rounded-3xl flex flex-col">
+                <div style={{background:"#71A3C6  "}} className="py-10 w-[30%] h-28  relative justify-end  items-start p-3 rounded-3xl flex flex-col">
                   <h1 className="absolute top-4 left-3 ">Grand total</h1>
-                  <div className="text-stone-950 bg-opacity-40 text-2xl"> <CountUp end={grandTotal} /></div>
+                  <div className=" bg-opacity-40 text-[30px] font-bold "> <CountUp end={grandTotal} />.00</div>
                 </div>
                
               </div>

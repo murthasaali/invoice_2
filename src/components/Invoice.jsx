@@ -74,12 +74,37 @@ function Invoice() {
           </div>
 
           <div className="w-[40%] h-[60%] rounded-3xl flex flex-col gap-2 p-3 " style={{background:"#71A3C6  "}}>
-            <div className="w-full  h-28flex justify-between">
+            <div className="w-full  h-28 flex justify-between">
             <div className=" h-20  w-fit  bg-stone  bg-opacity-80 relative justify-end items-start p-3 rounded-3xl flex flex-col">
                   <h1 className="absolute top-1 left-3 font-sans text-white text-xs ">invoice details </h1>
-                  <div className="text-stone-100 bg-opacity-40 font-bold text-[30px]"><span className="text-sm text-pretty">#</span>$27-101 <button className="px-3 py-2 text-xs"> Unsent</button></div>
+                  <div className="text-stone-100 bg-opacity-40 font-bold text-[25px] flex justify-center items-center"><span className="text-sm text-pretty">#</span>$27-101 <button className="px-3 py-2 text-xs font-thin border rounded-full"> Unsent</button></div>
                 </div>
+            <div className=" h-20  w-fit  bg-stone  bg-opacity-80 relative justify-end items-start p-3 rounded-3xl flex flex-col">
+                  <h1 className="absolute top-1 left-3 font-sans text-white text-xs ">company </h1>
+                  <div className="text-stone-100 bg-opacity-40 font-bold text-[25px] flex justify-center items-center"><span className="text-sm text-pretty"></span>BlueRoack <button className="px-3 py-2 text-xs font-thin border rounded-full"> </button></div>
+                </div>
+                <div className="h-full text-xs text-stone-100  w-fit px-2 ">
+                  <img src="https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100205.jpg?size=626&ext=jpg&ga=GA1.1.922335369.1686896801&semt=ais" className="h-10 w-10 rounded-full"/>
+                <div>username</div>
+                </div>
+
             </div>
+            <div className="w-full h-fit p-3 flex justify-between ">
+                <div className="w-[30%] h-28 bg-stone-200 bg-opacity-40 city-80 relative justify-end items-start p-3 rounded-3xl flex flex-col">
+                  <h1 className="absolute top-4 left-3 ">Total Price</h1>
+                  <div className="text-stone-950 bg-opacity-40 text-2xl"> </div>
+                </div>
+                <div className="w-[30%] h-28 bg-stone-200 bg-opacity-40  relative justify-end  items-start p-3 rounded-3xl flex flex-col">
+                  <h1 className="absolute top-4 left-3 ">Total tax</h1>
+                  <div className="text-stone-950 bg-opacity-40 text-2xl "> </div>
+                </div>
+                <div className="w-[30%] h-28 bg-stone-200 bg-opacity-40  relative justify-end  items-start p-3 rounded-3xl flex flex-col">
+                  <h1 className="absolute top-4 left-3 ">Grand total</h1>
+                  <div className="text-stone-950 bg-opacity-40 text-2xl"> </div>
+                </div>
+               
+              </div>
+              <div className="w-full h-14 rounded-full bg-stone-200 bg-opacity-40"></div>
           </div>
         </div>
       </div>
