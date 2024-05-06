@@ -1,0 +1,64 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* styles.css */
+.gradient {
+  position: relative;
+  background: hsla(179, 72%, 76%, 1);
+
+background: linear-gradient(225deg, hsla(179, 72%, 76%, 1) 0%, hsla(175, 28%, 76%, 1) 100%);
+
+background: -moz-linear-gradient(225deg, hsla(179, 72%, 76%, 1) 0%, hsla(175, 28%, 76%, 1) 100%);
+
+background: -webkit-linear-gradient(225deg, hsla(179, 72%, 76%, 1) 0%, hsla(175, 28%, 76%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#96EEED", endColorstr="#B1D3D0", GradientType=1 );
+  /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D7EBEB", endColorstr="#F4AFE9", GradientType=1 ); */
+}
+
+.gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(74, 72, 72, 0.5); /* Adjust opacity as needed */
+}
