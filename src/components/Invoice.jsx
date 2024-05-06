@@ -49,13 +49,13 @@ function Invoice() {
               <button className="px-4 bg-stone-100 bg-opacity-80 py-3 rounded-full h-fit text-xs">
                 Drafts
               </button>
-              <button className="px-4 bg-stone-100 bg-opacity-80 py-3 rounded-full h-fit text-xs flex">
+              <button className="px-4 bg-stone-100 hover:bg-custom transition-all duration-300 ease-in-out bg-opacity-80 py-3 rounded-full h-fit text-xs flex">
                 Unpaid Invoices
               </button>{" "}
             </div>
           </div>
           <div className="text-xl font-thin text-white flex gap-1">
-            <button className="p-3 h-fit rounded-full text-xl text-white border border-stone-200 border-opacity-40">
+            <button className="p-3 h-fit rounded-full text-xl text-white border border-stone-200 hover: border-opacity-40">
               {" "}
               <FaSearch />
             </button>
@@ -73,7 +73,14 @@ function Invoice() {
             <InvoiceTable filteredInvoice={searchQuery.length>0&&filteredInvoices} />
           </div>
 
-          <div className="w-[40%] h-[60%] bg-stone-950"></div>
+          <div className="w-[40%] h-[60%] rounded-3xl flex flex-col gap-2 p-3 " style={{background:"#71A3C6  "}}>
+            <div className="w-full  h-28flex justify-between">
+            <div className=" h-20  w-fit  bg-stone  bg-opacity-80 relative justify-end items-start p-3 rounded-3xl flex flex-col">
+                  <h1 className="absolute top-1 left-3 font-sans text-white text-xs ">invoice details </h1>
+                  <div className="text-stone-100 bg-opacity-40 font-bold text-[30px]"><span className="text-sm text-pretty">#</span>$27-101 <button className="px-3 py-2 text-xs"> Unsent</button></div>
+                </div>
+            </div>
+          </div>
         </div>
       </div>
       <CreateInvoiceModal isOpen={isModalOpen} onClose={closeModal} />

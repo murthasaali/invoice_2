@@ -78,15 +78,20 @@ function CreateInvoiceModal({ isOpen, onClose }) {
       <div className="fixed inset-0 flex items-center justify-center z-50">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="bg-stone-100 w-[50%] h-[70%] bg-opacity-80  rounded-3xl relative z-10">
-          <div className="w-full h-full bg-stone-800 bg-opacity-35 p-3">
-            <h1 className="text-xl font-thin w-full  text-start">Create Invoice</h1>
+          <div className="w-full h-full bg-stone-800 bg-opacity-35 p-3"> 
+            <h1 className="text-xl font-thin   text-custom p-2 bg-stone-900 rounded-full w-fit text-start">Create Invoice</h1>
             <button
               onClick={onClose}
               className="p-1 rounded-full text-stone-900 text-xl border border-stone-950 absolute top-3 right-3 hover:bg-gray-600"
             >
               <IoCloseOutline />
             </button>
-                <button onClick={()=>    setShowSecondModal(true)} className="px-4 rounded-full  bg-black absolute right-52 top-3 text-xs py-2 text-white  w-fit h-fit">Add items</button>
+            <div className="absolute right-52 top-3  flex gap-3">
+            <button onClick={()=>    setShowSecondModal(true)} className="px-4 rounded-full  bg-black text-xs py-2 text-white  w-fit h-fit">Add items</button>
+            <button onClick={()=>    setShowSecondModal(true)} className="px-4 rounded-full  bg-black text-xs py-2 text-white  w-fit h-fit">Add items</button>
+            <button onClick={()=>    setShowSecondModal(true)} className="px-4 rounded-full  bg-black text-xs py-2 text-white  w-fit h-fit">Add items</button>
+
+            </div>
             <form onSubmit={handleSubmit} className="mt-4">
               <div className="w-full flex gap-1 relative">
                 <div>

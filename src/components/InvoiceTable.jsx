@@ -8,7 +8,7 @@ function InvoiceTable({filteredInvoice}) {
     return (
       <table className="w-full">
         <thead>
-          <tr className="font-thin">
+          <tr className="font-thin text-xs">
             <th className="text-start py-2 text-red-500"><div className="rounded-full bg-stone-950 py-2 font-normal text-center">Invoice Number</div></th>
             <th className="text-start px-4 py-2 text-red-500"><div className="rounded-full bg-stone-950 py-2 font-normal text-center">Customer</div></th>
             <th className="text-start px-4 py-2 text-red-500"><div className="rounded-full bg-stone-950 py-2 font-normal text-center">Date</div></th>
