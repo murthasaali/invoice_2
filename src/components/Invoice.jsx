@@ -29,7 +29,7 @@ function Invoice() {
   return (
     <div className="h-full w-full flex flex-col gap-3 p-4">
       <InvoiceNavbar />
-      <div className="w-full  h-[80%] bg-stone-950 bg-opacity-60 rounded-3xl flex flex-col">
+      <div className="w-full  h-[80%] bg-stone-950 bg-opacity-60 rounded-3xl flex flex-col" >
         <div className="h-16 w-full rounded-3xl   flex justify-between px-10 items-center">
           <div className="text-xl font-thin text-white">Invoices </div>
           <div className="w-[300px] h-12 rounded-full border flex justify-between text-xl border-stone-200 border-opacity-40 items-center px-3">
