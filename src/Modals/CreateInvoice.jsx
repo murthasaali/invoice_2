@@ -76,7 +76,7 @@ function CreateInvoiceModal({ isOpen, onClose }) {
   return (
     <>
       <div className="fixed inset-0 flex items-center justify-center z-50">
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-75"></div>
         <div className="bg-stone-100 w-[50%] h-[70%] bg-opacity-80  rounded-3xl relative z-10">
           <div className="w-full h-full bg-stone-800 bg-opacity-35 p-3"> 
             <h1 className="text-xl font-thin   text-custom p-2 bg-stone-900 rounded-full w-fit text-start">Create Invoice</h1>

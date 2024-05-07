@@ -12,7 +12,7 @@ const invoiceData = [
   {
     invoiceNumber: '#INV-002',
     customerName: 'John Doe',
-    customerAvatar: 'https://img.freepik.com/free-photo/androgynous-avatar-non-binary-queer-person_23-2151100205.jpg?size=626&ext=jpg&ga=GA1.1.922335369.1686896801&semt=ais',
+    customerAvatar: 'https://avatars.mds.yandex.net/i?id=644bad278c1101c64374f08599a788a22c49ceea-10157623-images-thumbs&n=13',
     date: '2024-05-06',
     total: '$150.00',
     tax: '$15.00',

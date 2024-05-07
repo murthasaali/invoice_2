@@ -137,21 +137,22 @@ function DashBord() {
           </div>
           <div className="w-full h-fit px-10  flex justify-between rounded-3xl">
             <div className="w-fit flex  gap-[-10px]">
-              <div className="w-10 h-10 bg-black rounded-full"></div>
-              <div className="w-10 h-10 bg-black rounded-full"></div>
-              <div className="w-10 h-10 bg-black rounded-full"></div>
-              <div className="w-10 h-10 bg-black rounded-full"></div>
-              <div className="w-10 h-10 bg-black rounded-full"></div>
+              <div className="w-10 h-10 bg-black border border-white border-[3px] rounded-full" style={{backgroundImage:"url('https://i.pinimg.com/originals/0b/ea/32/0bea327b41fcb149bf331e2fca53ee4c.jpg' )" ,backgroundPosition:"center" ,backgroundSize:"cover " ,backgroundRepeat:"no-repeat"}}></div>
+              <div className="w-10 h-10 bg-black border border-white border-[3px] rounded-full"  style={{backgroundImage:"url('https://avatars.mds.yandex.net/i?id=644bad278c1101c64374f08599a788a22c49ceea-10157623-images-thumbs&n=13' )" ,backgroundPosition:"center" ,backgroundSize:"cover" ,backgroundRepeat:"no-repeat"}} ></div>
+              <div className="w-10 h-10 bg-black border border-white border-[3px] rounded-full"  style={{backgroundImage:"url('https://avatars.mds.yandex.net/i?id=b0d8f61f2bb22224c5ea1fff4fb2ef0c7d149d3e-10491961-images-thumbs&n=13' )" ,backgroundPosition:"center" ,backgroundSize:"cover " ,backgroundRepeat:"no-repeat"}} ></div>
+              <div className="w-10 h-10 bg-black border border-white border-[3px] rounded-full"  style={{backgroundImage:"url('https://avatars.mds.yandex.net/i?id=922d95cead989b8f1456fc7b02e25b102c6e8364-12193070-images-thumbs&n=13' )" ,backgroundPosition:"center" ,backgroundSize:"cover " ,backgroundRepeat:"no-repeat"}} ></div>
+              <div className="w-10 h-10 bg-black border border-white border-[3px] rounded-full"  style={{backgroundImage:"url('https://avatars.mds.yandex.net/i?id=11823c4157fed4ba1345361fb3467b34624c814b-11939057-images-thumbs&n=13' )" ,backgroundPosition:"center" ,backgroundSize:"cover " ,backgroundRepeat:"no-repeat"}} ></div>
             </div>
             <div className="w-fit flex  gap-[-10px]">
-              <div className="w-10 h-10 bg-black rounded-full"></div>
-              <div className="w-10 h-10 bg-black rounded-full"></div>
-              <div className="w-10 h-10 bg-black rounded-full"></div>
+              <div className="w-10 h-10 bg-black border border-white border-[3px] rounded-full"  style={{backgroundImage:"url('https://avatars.mds.yandex.net/i?id=95c7f192543a19335194b20cfd9347837358a9d0-12371956-images-thumbs&n=13' )" ,backgroundPosition:"center" ,backgroundSize:"cover " ,backgroundRepeat:"no-repeat"}} ></div>
+              <div className="w-10 h-10 bg-black border border-white border-[3px] rounded-full"  style={{backgroundImage:"url('https://www.the-sun.com/wp-content/uploads/sites/6/2023/01/NA-Andrew-tate-offplatform.jpg?strip=all&amp;quality=100&amp;w=1920&amp;h=1080&amp;crop=1' )" ,backgroundPosition:"center" ,backgroundSize:"cover " ,backgroundRepeat:"no-repeat"}} ></div>
+              <div className="w-10 h-10 bg-black border border-white border-[3px] rounded-full"  style={{backgroundImage:"url('https://www.dmarge.com/wp-content/uploads/2019/05/how-to-wear-suit-jacket.jpg' )" ,backgroundPosition:"center" ,backgroundSize:"cover " ,backgroundRepeat:"no-repeat"}} ></div>
             </div>
-            <div className="w-fit flex  gap-[-10px]">
-              <div className="w-10 h-10 bg-black rounded-full"></div>
-              <div className="w-10 h-10 bg-black rounded-full"></div>
-            </div>
+            <div className="w-fit flex gap-[-10px] relative">
+  <div className="w-10 h-10 bg-black border border-white border-[3px] rounded-full absolute top-0 right-8" style={{backgroundImage:"url('https://personalgoldclub.com/wp-content/uploads/2018/12/ar_suitwide_p-business-woman.jpg' )", backgroundPosition:"center", backgroundSize:"cover", backgroundRepeat:"no-repeat"}} ></div>
+  <div className="w-10 h-10 bg-black border border-white border-[3px] rounded-full  " style={{backgroundImage:"url('https://thumbs.dreamstime.com/b/business-woman-modern-office-44552485.jpg' )", backgroundPosition:"center", backgroundSize:"cover", backgroundRepeat:"no-repeat", zIndex: 1}} ></div>
+</div>
+
           </div>
         </div>
       </div>
