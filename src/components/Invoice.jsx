@@ -17,9 +17,9 @@ function Invoice() {
   }, [searchQuery]);
   
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const openModal = () => {
     setIsModalOpen(true);
+    // window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const closeModal = () => {
